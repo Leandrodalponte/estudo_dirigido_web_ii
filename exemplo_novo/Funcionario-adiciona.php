@@ -4,12 +4,14 @@
     include_once("produto-banco.php");
 
 
+    $idFuncionario = $_POST["idFuncionario"];
+    $sobrenome = $_POST["sobrenome"];
     $nome = $_POST["nome"];
-    $preco = $_POST["preco"];
-    $descricao = $_POST["descricao"];
-    $categoria_id = $_POST["categoria_id"];
+    $titulo = $_POST["titulo"];
+    $titulocortesia = $_POST["titulocortesia"];
+    
 
-    if (insereProduto($conexao, $nome, $preco, $descricao, $categoria_id)) { ?>
+    if (insereFuncionario($conexao, $idFuncionario, $sobrenome, $nome, $titulo, $titulocortesia, )) { ?>
         <p class="text-success">O produto <?=$nome?>, foi adicionado com sucesso!</p>
     <?php } else {
         $msg = mysqli_error($conexao);?>

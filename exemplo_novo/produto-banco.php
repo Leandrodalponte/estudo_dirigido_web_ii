@@ -1,5 +1,5 @@
 <?php
-    function listaProdutos($conn) {
+    function listaFuncionario($conn) {
         $produtos = array();
 
         $sql = "select p.*, c.nome as categoria_nome from produtos as p join categorias as c on p.categoria_id = c.id";
@@ -13,7 +13,7 @@
         return $produtos;
     }
 
-    function insereProduto($conn, $nome, $preco, $descricao, $categoria_id) {
+    function insereFuncionario($conn, $idFuncionario, $sobrenome, $nome, $titulo, $titulocortesia) {
         $query = "insert into produtos (nome, preco, descricao, categoria_id) values ('{$nome}',{$preco},'{$descricao}',{$categoria_id})";
         return mysqli_query($conn, $query);
     }
