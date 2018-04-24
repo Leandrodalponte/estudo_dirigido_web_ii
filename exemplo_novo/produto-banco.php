@@ -13,8 +13,8 @@
         return $produtos;
     }
 
-    function insereFuncionario($conn, $idFuncionario, $sobrenome, $nome, $titulo, $titulocortesia) {
-        $query = "insert into produtos (nome, preco, descricao, categoria_id) values ('{$nome}',{$preco},'{$descricao}',{$categoria_id})";
+    function insereFuncionario($conn, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telresidencial, $extensao ) {
+        $query = "insert into funcionarios ( Sobrenome, Nome, Titulo, TituloCortesia, DataNac, DataAdmissao, Dndereco, Cidade, Regiao, Cep, Pais, TelefoneResidencial, Extensao ) values ('{$sobrenome}','{$nome}', '{$titulo}', '{$titulocortesia}', {$dataNac}, {$dataAdmissao}, '{$endereco}', '{$cidade}', {$regiao}, {$cep}, {$pais}, {$telefoneresidencial}, '{$extensao}')";
         return mysqli_query($conn, $query);
     }
 
