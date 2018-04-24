@@ -5,7 +5,7 @@
 ?>
 
 <?php if (array_key_exists("removido", $_GET) && $_GET["removido"]==true) { ?>
-    <p class="alert-success">funcionario <?=$_GET['funcionario']?> foi removido com sucesso!</p>
+    <p class="alert-success">Funcionario <?=$_GET['funcionario']?> foi removido com sucesso!</p>
 <?php } ?>
 
 <table class="table table-striped table-bordered">

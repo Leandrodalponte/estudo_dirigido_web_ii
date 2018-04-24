@@ -1,12 +1,12 @@
 <?php
     include_once("cabecalho.php");
     include_once("conecta.php");
-    include_once("produto-banco.php");
-    include_once("categorias-banco.php");
+    include_once("funcionario-banco.php");
+    //include_once("categorias-banco.php");
 
-    $id = $_GET['id'];
-    $produto = buscaProduto($conexao, $id);
-    $categorias = listaCategorias($conexao);
+    $IDFuncionario = $_GET['IDFuncionario'];
+    $funcionario = buscaFuncionario($conexao, $IDFuncionario);
+    //$categorias = listaCategorias($conexao);
 ?>
 
 <h1>Alteração de Produto Cadastrado</h1>

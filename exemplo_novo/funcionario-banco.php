@@ -19,8 +19,8 @@
         return mysqli_query($conn, $query);
     }
 
-    function alteraFuncionario($conn,$id,$nome,$preco,$descricao,$categoria_id) {
-        $query = "update produtos set nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id} where id = {$id}";
+    function alteraFuncionario($conn,$IDFuncionario,$sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telresidencial, $extensao) {
+        $query = "update funcionarios set Nome = '{$nome}', Sobrenome = '{$sobrenome}', Titulo = '{$titulo}', TituloCortesia = '{$titulocortesia}' where IDFuncionario = {$IDFuncionario}";
         return mysqli_query($conn, $query);
     }
 
