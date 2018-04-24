@@ -1,16 +1,16 @@
 <?php
     include_once("cabecalho.php");
     include_once("conecta.php");
-    include_once("produto-banco.php");
+    include_once("funcionario-banco.php");
 ?>
 
 <?php
 
     $id = $_POST['id'];
-    $produto = buscaProduto($conexao, $id);
-    removeProduto($conexao, $id);
+    $funcionario = buscaFuncionario($conexao, $id);
+    removeFuncionario($conexao, $id);
 
-    header("Location: produto-lista.php?removido=true&produto={$produto[nome]}");
+    header("Location: produto-lista.php?removido=true&produto={$funcionario[nome]}");
     die();
 
     ?>
