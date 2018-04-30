@@ -9,8 +9,8 @@
     $nome = $_POST["Nome"];
     $titulo = $_POST["Titulo"];
     $titulocortesia = $_POST["TituloCortesia"];
-    $dataNac = $_POST["Datanac"];
-    $dataAdmisao = $_POST["DataAdmissao"];
+    $dataNac = $_POST["DataNac"];
+    $dataAdmissao = $_POST["DataAdmissao"];
     $endereco = $_POST["Endereco"];
     $cidade = $_POST["Cidade"];
     $regiao = $_POST["Regiao"];
@@ -18,7 +18,7 @@
     $pais = $_POST["Pais"];
     $telefoneresidencial = $_POST["TelefoneResidencial"];
     $extensao = $_POST["Extensao"];
-    $notas = $_POST["Notas"];
+   
     
 
     if (insereFuncionario($conexao, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefoneresidencial, $extensao )) { ?>
