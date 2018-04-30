@@ -5,8 +5,8 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li><a href="produto-formulario.php">Cadastra Funcionario</a></li>
-                <li><a href="produto-lista.php">Lista de Produtos</a></li>
+                <li><a href="funcionario-formulario.php">Cadastra Funcionario</a></li>
+                <li><a href="funcionario-lista.php">Lista de Funcionario</a></li>
                 <li><a href="contato.php">Contato</a></li>
             <ul>
         </div>

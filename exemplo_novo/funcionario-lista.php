@@ -44,10 +44,10 @@
             <td><?=$funcionario['Extensao']?></td>
             <td>
             
-                <a class="btn btn-primary" href="produto-altera-formulario.php?id=<?=$funcionario['id']?>">Alterar</a>
+                <a class="btn btn-primary" href="funcionario-altera-formulario.php?id=<?=$funcionario['id']?>">Alterar</a>
 
-                <form action="produto-remove.php" method="post">
-                    <input type="hidden" name="id" value="<?=$produto['id']?>" />
+                <form action="funcionario-remove.php" method="post">
+                    <input type="hidden" name="id" value="<?=$funcionario['id']?>" />
                     <button class="btn btn-danger">Remover</button>
                 </form>
             </td>

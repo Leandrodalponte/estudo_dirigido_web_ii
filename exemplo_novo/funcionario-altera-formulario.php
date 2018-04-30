@@ -9,24 +9,24 @@
     //$categorias = listaCategorias($conexao);
 ?>
 
-<h1>Alteração de Produto Cadastrado</h1>
+<h1>Alteração de Funcionario Cadastrado</h1>
 
-<form action="produto-altera.php" method="post">
+<form action="funcionario-altera.php" method="post">
     <input type="hidden" name="id" value="<?=$id?>" />
     <table>
         <tr>
             <td>Nome</td>
-            <td><input type="text" class="form-control" name="nome" value="<?=$produto['nome']?>" /></td>
+            <td><input type="text" class="form-control" name="nome" value="<?=$funcionario['nome']?>" /></td>
         </tr>
 
         <tr>
             <td>Preço</td>
-            <td><input type="number" class="form-control" name="preco" value="<?=$produto['preco']?>" /></td>
+            <td><input type="number" class="form-control" name="preco" value="<?=$funcionario['preco']?>" /></td>
         </tr>
 
         <tr>
             <td>Descrição</td>
-            <td><textarea class="form-control" name="descricao" ><?=$produto['descricao']?></textarea></td>
+            <td><textarea class="form-control" name="descricao" ><?=$funcionario['descricao']?></textarea></td>
         </tr>
 
         <tr>
@@ -34,7 +34,7 @@
             <td>
                 <select name="categoria_id">
                     <?php foreach ($categorias as $categoria) {
-                        $ehCategoriaBanco = $produto['categoria_id'] == $categoria['id'];
+                        $ehCategoriaBanco = $funcionario['categoria_id'] == $categoria['id'];
                         $selecao = $ehCategoriaBanco ? "selected='selected'":"";
                     ?>
                         <option value="<?=$categoria['id']?>" <?=$selecao?>><?=$categoria["nome"]?></option>
