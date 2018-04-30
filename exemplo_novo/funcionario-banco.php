@@ -15,7 +15,7 @@
     }
 
     function insereFuncionario($conn, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefoneresidencial, $extensao ) {
-        $query = "insert into funcionarios ( Sobrenome, Nome, Titulo, TituloCortesia, DataNac, DataAdmissao, Dndereco, Cidade, Regiao, Cep, Pais, TelefoneResidencial, Extensao ) values ('{$sobrenome}','{$nome}', '{$titulo}', '{$titulocortesia}', {$dataNac}, {$dataAdmissao}, '{$endereco}', '{$cidade}', {$regiao}, {$cep}, {$pais}, {$telres}, '{$extensao}')";
+        $query = "insert into funcionarios ( Sobrenome, Nome, Titulo, TituloCortesia, DataNac, DataAdmissao, Endereco, Cidade, Regiao, Cep, Pais, TelefoneResidencial, Extensao ) values ('{$sobrenome}','{$nome}', '{$titulo}', '{$titulocortesia}', {$dataNac}, {$dataAdmissao}, '{$endereco}', '{$cidade}', {$regiao}, {$cep}, {$pais}, {$telefoneresidencial}, '{$extensao}')";
         return mysqli_query($conn, $query);
     }
 
