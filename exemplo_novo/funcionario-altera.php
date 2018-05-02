@@ -5,13 +5,21 @@
 ?>
 
 <?php
-    $id = $_POST["id"];
-    $nome = $_POST["nome"];
-    $preco = $_POST["preco"];
-    $descricao = $_POST["descricao"];
-    $categoria = $_POST["categoria_id"];
+       $sobrenome = $_POST["Sobrenome"];
+       $nome = $_POST["Nome"];
+       $titulo = $_POST["Titulo"];
+       $titulocortesia = $_POST["TituloCortesia"];
+       $dataNac = $_POST["DataNac"];
+       $dataAdmissao = $_POST["DataAdmissao"];
+       $endereco = $_POST["Endereco"];
+       $cidade = $_POST["Cidade"];
+       $regiao = $_POST["Regiao"];
+       $cep = $_POST["Cep"];
+       $pais = $_POST["Pais"];
+       $telefoneresidencial = $_POST["TelefoneResidencial"];
+       $extensao = $_POST["Extensao"];
 
-    if (alteraFuncionario($conexao, $id, $nome, $preco, $descricao, $categoria)) {
+    if (alteraFuncionario($conexao, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefoneresidencial, $extensao )) {
         ?>
             <p class="text-success">O funcionario <?=$nome?> foi alterado com sucesso!</p>
         <?php
