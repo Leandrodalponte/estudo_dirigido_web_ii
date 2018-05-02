@@ -33,12 +33,12 @@
 
         <tr>
             <td>Data Nascimento</td>
-            <td><input type=date  name="DataNac" ></td>
+            <td><input type="date" name="DataNac" ></td>
         </tr>
          
         <tr>
             <td>Data Admimissão</td>
-            <td><input type=date  name="DataAdmissao" ></td>
+            <td><input type="date"  name="DataAdmissao" ></td>
         </tr>
 
         <tr>
