@@ -2,7 +2,7 @@
     function listaFuncionario($conn) {
         $funcionarios = array();
 
-        $sql = "select IDFuncionario, Nome, Sobrenome
+        $sql = "select IDFuncionario, Nome, Sobrenome, Titulo, TituloCortesia, DataNac, DataAdmissao, Endereco, Cidade, Regiao, Cep, Pais, TelefoneResidencial, Extensao
                 from funcionarios";
         $resultado = mysqli_query($conn, $sql);
 

@@ -26,7 +26,7 @@
     </tr>
     <?php
         $funcionario = listaFuncionario($conexao);
-        foreach ($funcionarios as $funcionario) :
+        foreach ($funcionario as $funcionario) :
     ?>
         <tr>
             <td><?=$funcionario['Nome']?></td>
@@ -44,10 +44,10 @@
             <td><?=$funcionario['Extensao']?></td>
             <td>
             
-                <a class="btn btn-primary" href="funcionario-altera-formulario.php?id=<?=$funcionario['id']?>">Alterar</a>
+                <a class="btn btn-primary" href="funcionario-altera-formulario.php?id=<?=$funcionario['IDFuncionario']?>">Alterar</a>
 
                 <form action="funcionario-remove.php" method="post">
-                    <input type="hidden" name="id" value="<?=$funcionario['id']?>" />
+                    <input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>" />
                     <button class="btn btn-danger">Remover</button>
                 </form>
             </td>
