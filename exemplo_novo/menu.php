@@ -7,6 +7,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="funcionario-formulario.php">Cadastra Funcionario</a></li>
                 <li><a href="funcionario-lista.php">Lista de Funcionario</a></li>
+                <li><a href="territorio-formulario.php">Cadastra Territorio</a></li>
                 <li><a href="territorio-lista.php">Lista de Territorios</a></li>
                 <li><a href="contato.php">Contato</a></li>
             <ul>

@@ -14,23 +14,23 @@
         return $territorios;
     }
 
-    function insereTerritorio($conn, $descricaoTerritorio, $IDRegiao) {
-        $query = "insert into territorios ( descricaoTerritorios, IDRegiao) values ('{$descricaoTerritorio}',{$IDRegiao})";
+    function insereTerritorio($conn, $IDTerritorio, $descricaoTerritorio, $IDRegiao) {
+        $query = "insert into territorios (IDTerritorio, DescricaoTerritorio, IDRegiao) values ({$IDTerritorio},'{$descricaoTerritorio}',{$IDRegiao})";
         return mysqli_query($conn, $query);
     }
 
-    function alteraTerritorio($conn, $IDTerritorios, $descricaoTerritorio, $IDRegiao) {
-        $query = "update territorios set descricaoTerritorios = '{$descricaoTerritorios}', IDRegiao = '{$IDRegiao}'";
+    function alteraTerritorio($conn, $IDTerritorio, $descricaoTerritorio, $IDRegiao) {
+        $query = "update territorios set DescricaoTerritorio = '{$descricaoTerritorios}', IDRegiao = {$IDRegiao}";
         return mysqli_query($conn, $query);
     }
 
-    function removeTerritorio($conn, $IDTerritorios) {
-        $query = "delete from territorios where IDTerritorios = {$IDTerritorios}";
+    function removeTerritorio($conn, $IDTerritorio) {
+        $query = "delete from territorios where IDTerritorio = {$IDTerritorio}";
         return mysqli_query($conn, $query);
     }
 
-    function buscaTerritorio($conn, $IDTerritorios) {
-        $query = "select * from territorios where IDTerritorios = {$IDTerritorios}";
+    function buscaTerritorio($conn, $IDTerritorio) {
+        $query = "select * from territorios where IDTerritorio = {$IDTerritorio}";
         $resultado = mysqli_query($conn, $query);
         return mysqli_fetch_assoc($resultado);
     }

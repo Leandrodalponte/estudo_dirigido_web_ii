@@ -1,7 +1,7 @@
 <?php
     include_once("cabecalho.php");
     include_once("conecta.php");
-    include_once("funcionario-banco.php");
+    include_once("territorio-banco.php");
     include_once("categorias-banco.php");
 
    // $categorias = listaCategorias($conexao);
@@ -9,7 +9,7 @@
 
 <h1>Formulário de Cadastro</h1>
 
-<form action="funcionario-adiciona.php" method="post">
+<form action="territorio-adiciona.php" method="post">
     <table>
         <tr>
             <td>ID Territorio</td>
