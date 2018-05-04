@@ -23,6 +23,7 @@
         <td>Pais</td>
         <td>Telefone</td>
         <td>Extensao</td>
+        <td>Opções</td>
     </tr>
     <?php
         $funcionario = listaFuncionario($conexao);

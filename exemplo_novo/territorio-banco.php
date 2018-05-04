@@ -19,17 +19,17 @@
         return mysqli_query($conn, $query);
     }
 
-    function alteraFuncionario($conn, $IDTerritorios, $descricaoTerritorio, $IDRegiao) {
+    function alteraTerritorio($conn, $IDTerritorios, $descricaoTerritorio, $IDRegiao) {
         $query = "update territorios set descricaoTerritorios = '{$descricaoTerritorios}', IDRegiao = '{$IDRegiao}'";
         return mysqli_query($conn, $query);
     }
 
-    function removeFuncionario($conn, $IDTerritorios) {
+    function removeTerritorio($conn, $IDTerritorios) {
         $query = "delete from territorios where IDTerritorios = {$IDTerritorios}";
         return mysqli_query($conn, $query);
     }
 
-    function buscaFuncionario($conn, $IDTerritorios) {
+    function buscaTerritorio($conn, $IDTerritorios) {
         $query = "select * from territorios where IDTerritorios = {$IDTerritorios}";
         $resultado = mysqli_query($conn, $query);
         return mysqli_fetch_assoc($resultado);

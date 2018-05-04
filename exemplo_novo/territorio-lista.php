@@ -10,16 +10,19 @@
 
 <table class="table table-striped table-bordered">
     <tr>
+        <td>ID Territorio</td>
         <td>Terrirotio</td>
         <td>ID Região</td>
+        <td>Opções</td>
     </tr>
     <?php
         $territorio = listaTerritorio($conexao);
         foreach ($territorio as $territorio) :
     ?>
         <tr>
-            <td><?=$territorio['Nome']?></td>
-            <td><?=$territorio['Sobrenome']?></td>
+            <td><?=$territorio['IDTerritorio']?></td>
+            <td><?=$territorio['DescricaoTerritorio']?></td>
+            <td><?=$territorio['IDRegiao']?></td>
             <td>
             
                 <a class="btn btn-primary" href="territorio-altera-formulario.php?id=<?=$territorio['IDTerritorio']?>">Alterar</a>
