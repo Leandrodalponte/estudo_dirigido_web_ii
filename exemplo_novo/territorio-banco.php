@@ -9,8 +9,6 @@
         while ($territorio = mysqli_fetch_assoc($resultado)) {
             array_push($territorios, $territorio);
         }
-        //mysqli_fetch_all($resultado)
-
         return $territorios;
     }
 
