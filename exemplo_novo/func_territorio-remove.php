@@ -7,7 +7,7 @@
 <?php
 
     $IDTerritorio = $_POST['IDTerritorio'];
-    $funterritorio = buscaTerritorio($conexao, $IDTerritorio);
+    $funterritorio = buscaFunTerritorio($conexao, $IDTerritorio);
     removeFunTerritorio($conexao, $IDTerritorio);
 
     header("Location: func_territorio-lista.php?removido=true&territorio={$funterritorio[IDTerritorio]}");

@@ -25,7 +25,7 @@
             
                 <a class="btn btn-primary" href="func_territorio-altera-formulario.php?id=<?=$funterritorio['IDTerritorio']?>">Alterar</a>
 
-                <form action="territorio-remove.php" method="post">
+                <form action="func_territorio-remove.php" method="post">
                     <input type="hidden" name="IDTerritorio" value="<?=$funterritorio['IDTerritorio']?>" />
                     <button class="btn btn-danger">Remover</button>
                 </form>
