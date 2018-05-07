@@ -4,7 +4,7 @@
     include_once("territorio-banco.php");
     //include_once("categorias-banco.php");
 
-    $IDTerritorio = $_GET['IDTerritorio'];
+    $IDTerritorio = $_GET['id'];
     $territorio = buscaTerritorio($conexao, $IDTerritorio);
     //$categorias = listaCategorias($conexao);
 ?>

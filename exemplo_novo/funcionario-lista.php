@@ -34,8 +34,8 @@
             <td><?=$funcionario['Sobrenome']?></td>
             <td><?=$funcionario['Titulo']?></td>
             <td><?=$funcionario['TituloCortesia']?></td>
-            <td><?=$funcionario['DataNac']?></td>
-            <td><?=$funcionario['DataAdmissao']?></td>
+            <td><?=date('d/m/Y',  strtotime($funcionario['DataNac']));?></td>
+            <td><?=date('d/m/Y',  strtotime($funcionario['DataAdmissao']));?></td>
             <td><?=$funcionario['Endereco']?></td>
             <td><?=$funcionario['Cidade']?></td>
             <td><?=$funcionario['Regiao']?></td>

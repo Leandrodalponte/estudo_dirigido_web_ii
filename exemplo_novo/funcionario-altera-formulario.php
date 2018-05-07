@@ -14,6 +14,9 @@
 <form action="funcionario-altera.php" method="post">
     <input type="hidden" name="IDFuncionario" value="<?=$IDFuncionario?>" />
     <table>
+    <?php
+        while ($row = mysqli_fetch_assoc($funcionario)) {
+            ?>
         <tr>
             <td>Nome</td>
             <td><input type="text" class="form-control" value="<?= $row['Nome'] ?>" name="Nome" /></td>
@@ -26,12 +29,12 @@
 
         <tr>
             <td>Titulo</td>
-            <td><textarea type="form-control" class="form-control" value="<?= $row['Titulo'] ?>" name="Titulo" ></textarea></td>
+            <td><input type="text" type="form-control" class="form-control" value="<?= $row['Titulo'] ?>" name="Titulo" /></td>
         </tr>
 
         <tr>
             <td>Titulo Cortesia</td>
-            <td><textarea type="form-control" class="form-control" value="<?= $row['TituloCortesia'] ?>" name="TituloCortesia"></textarea></td>
+            <td><input type="text" type="form-control" class="form-control" value="<?= $row['TituloCortesia'] ?>" name="TituloCortesia"/></td>
         </tr>
 
         <tr>
@@ -46,32 +49,31 @@
 
         <tr>
             <td>Endereço</td>
-            <td><input type="text" value="<?= $row['Endereco'] ?>" class="form-control" name="Endereco" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['Endereco'] ?>" name="Endereco" /></td>
         </tr>
         <tr>
             <td>Cidade</td>
-            <td><input type="text" value="<?= $row['Cidade'] ?>" class="form-control" name="Cidade" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['Cidade'] ?>" name="Cidade" /></td>
         </tr>
         <tr>
             <td>Região</td>
-            <td><input type="text" value="<?= $row['Regiao'] ?>" class="form-control" name="Regiao" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['Regiao'] ?>" name="Regiao" /></td>
         </tr>
         <tr>
             <td>Cep</td>
-            <td><input type="text" value="<?= $row['Cep'] ?>" class="form-control" name="Pais" /></td>
-            <td><input type="number_format"  class="form-control" name="Cep" /></td>
+            <td><input type="number_format" class="form-control" value="<?= $row['Cep'] ?>" name="Cep" /></td>
         </tr>
         <tr>
             <td>Pais</td>
-            <td><input type="text" value="<?= $row['Pais'] ?>" class="form-control" name="Pais" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['Pais'] ?>" name="Pais" /></td>
         </tr>
         <tr>
             <td>Telefone</td>
-            <td><input type="text" value="<?= $row['TelefoneResidencial'] ?>" class="form-control" name="TelefoneResidencial" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['TelefoneResidencial'] ?>" name="TelefoneResidencial" /></td>
         </tr>
         <tr>
             <td>Extesão</td>
-            <td><input type="text" value="<?= $row['Extensao'] ?>" class="form-control" name="Extensao" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['Extensao'] ?>" name="Extensao" /></td>
         </tr>
 
         <tr>
@@ -79,5 +81,11 @@
                 <button class="btn btn-primary" type="submit">Alterar</button>
             </td>
         </tr>
+        <?php
+        }
+        ?>
     </table>
 </form>
+<script type="text/javascript">
+    $(".form_datetime").datetimepicker({format: 'dd-mm-yyyy'});
+</script>

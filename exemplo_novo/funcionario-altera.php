@@ -5,6 +5,7 @@
 ?>
 
 <?php
+       $IDFuncionario = $_POST["IDFuncionario"];    
        $sobrenome = $_POST["Sobrenome"];
        $nome = $_POST["Nome"];
        $titulo = $_POST["Titulo"];
@@ -19,7 +20,7 @@
        $telefoneresidencial = $_POST["TelefoneResidencial"];
        $extensao = $_POST["Extensao"];
 
-    if (alteraFuncionario($conexao, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefoneresidencial, $extensao )) {
+    if (alteraFuncionario($conexao, $IDFuncionario, $sobrenome, $nome, $titulo, $titulocortesia, $dataNac, $dataAdmissao, $endereco, $cidade, $regiao, $cep, $pais, $telefoneresidencial, $extensao )) {
         ?>
             <p class="text-success">O funcionario <?=$nome?> foi alterado com sucesso!</p>
         <?php

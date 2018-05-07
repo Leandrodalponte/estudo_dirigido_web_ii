@@ -31,7 +31,6 @@
 
     function buscaFuncionario($conn, $IDFuncionario) {
         $query = "select * from funcionarios where IDFuncionario = {$IDFuncionario}";
-        $resultado = mysqli_query($conn, $query);
-        return mysqli_fetch_assoc($resultado);
+        return mysqli_query($conn, $query);
     }
 ?>
