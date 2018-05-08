@@ -4,15 +4,15 @@
     include_once("func_territorio-banco.php");
     //include_once("categorias-banco.php");
 
-    $IDTerritorio = $_GET['id'];
-    $funterritorio = buscaFunTerritorio($conexao, $IDTerritorio);
+    $IDTerritoriofun = $_GET['id'];
+    $funterritorio = buscaFunTerritorio($conexao, $IDTerritoriofun);
     //$categorias = listaCategorias($conexao);
 ?>
 
 <h1>Alteração de Cadastrado</h1>
 
 <form action="func_territorio-altera.php" method="post">
-    <input type="hidden" name="IDTerritorio" value="<?=$IDTerritorio?>" />
+    <input type="hidden" name="IDTerritorio" value="<?=$IDTerritoriofun?>" />
     <table>
         <tr>
             <td>ID Funcionario</td>

@@ -5,7 +5,7 @@
 ?>
 
 <?php
-       $IDFuncionario = $_POST["IDFuncionario"];    
+       $IDFuncionario = $_POST["IDFuncionario"];
        $sobrenome = $_POST["Sobrenome"];
        $nome = $_POST["Nome"];
        $titulo = $_POST["Titulo"];

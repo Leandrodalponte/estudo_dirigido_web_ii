@@ -18,6 +18,8 @@
     $pais = $_POST["Pais"];
     $telefoneresidencial = $_POST["TelefoneResidencial"];
     $extensao = $_POST["Extensao"];
+    $dataNac="1948-12-08";    
+
    
     
 

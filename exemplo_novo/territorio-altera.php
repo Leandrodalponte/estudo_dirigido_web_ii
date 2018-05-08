@@ -5,6 +5,7 @@
 ?>
 
 <?php
+      $IDTerritorio = $_POST["IDTerritorio"];
       $DescricaoTerritorio = $_POST["DescricaoTerritorio"];
       $IDRegiao = $_POST["IDRegiao"];
 

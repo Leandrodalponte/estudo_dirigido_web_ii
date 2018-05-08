@@ -6,11 +6,11 @@
 
 <?php
 
-    $IDTerritorio = $_POST['IDTerritorio'];
-    $funterritorio = buscaFunTerritorio($conexao, $IDTerritorio);
-    removeFunTerritorio($conexao, $IDTerritorio);
+    $IDTerritoriofun = $_POST['IDTerritorio'];
+    $funterritorio = buscaFunTerritorio($conexao, $IDTerritoriofun);
+    removeFunTerritorio($conexao, $IDTerritoriofun);
 
-    header("Location: func_territorio-lista.php?removido=true&territorio={$funterritorio[IDTerritorio]}");
+    header("Location: func_territorio-lista.php?removido=true&territorio={$IDTerritoriofun[IDTerritorio]}");
     die();
 
     ?>

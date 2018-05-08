@@ -14,14 +14,17 @@
 <form action="territorio-altera.php" method="post">
     <input type="hidden" name="IDTerritorio" value="<?=$IDTerritorio?>" />
     <table>
+            <?php
+        while ($row = mysqli_fetch_assoc($territorio)) {
+            ?>
         <tr>
             <td>Territorio</td>
-            <td><input type="text" class="form-control" name="DescricaoTerritorio" /></td>
+            <td><input type="text" class="form-control" value="<?= $row['DescricaoTerritorio'] ?>"  name="DescricaoTerritorio" /></td>
         </tr>
 
         <tr>
             <td>ID Região</td>
-            <td><input type="text" class="form-control" name="IDRegiao" /></td>
+            <td><input type="text" class="form-control"  value="<?= $row['IDRegiao'] ?>" name="IDRegiao" /></td>
         </tr>
 
         <tr>
@@ -30,5 +33,8 @@
                 <button class="btn btn-primary" type="submit">Alterar</button>
             </td>
         </tr>
+        <?php
+        }
+        ?>
     </table>
 </form>

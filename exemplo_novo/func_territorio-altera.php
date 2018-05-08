@@ -5,16 +5,17 @@
 ?>
 
 <?php
-      $IDRegiao = $_POST["IDFuncionario"];
+      $IDFuncionario = $_POST["IDFuncionario"];
+      $IDTerritoriofun = $_POST["IDTerritorio"];
 
-    if (alteraFunTerritorio($conexao, $IDTerritorio, $IDFuncionario)) {
+    if (alteraFunTerritorio($conexao, $IDTerritoriofun, $IDFuncionario)) {
         ?>
-            <p class="text-success">O Territorio <?=$IDTerritorio?> foi alterado com sucesso!</p>
+            <p class="text-success">O Territorio <?=$IDTerritoriofun?> foi alterado com sucesso!</p>
         <?php
     } else {
         $msg = mysqli_error($conexao);
         ?>
-            <p class="text-danger">O Territorio <?=$IDTerritorio?> não foi alterado com sucesso: <?=$msg?></p>
+            <p class="text-danger">O Territorio <?=$IDTerritoriofun?> não foi alterado com sucesso: <?=$msg?></p>
         <?php
     }
 

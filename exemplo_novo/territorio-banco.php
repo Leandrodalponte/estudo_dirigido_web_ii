@@ -18,7 +18,7 @@
     }
 
     function alteraTerritorio($conn, $IDTerritorio, $descricaoTerritorio, $IDRegiao) {
-        $query = "update territorios set DescricaoTerritorio = '{$descricaoTerritorios}', IDRegiao = {$IDRegiao}";
+        $query = "update territorios set DescricaoTerritorio = '{$descricaoTerritorio}', IDRegiao = {$IDRegiao} where IDTerritorio = {$IDTerritorio} ";
         return mysqli_query($conn, $query);
     }
 
@@ -29,7 +29,6 @@
 
     function buscaTerritorio($conn, $IDTerritorio) {
         $query = "select * from territorios where IDTerritorio = {$IDTerritorio}";
-        $resultado = mysqli_query($conn, $query);
-        return mysqli_fetch_assoc($resultado);
+        return mysqli_query($conn, $query);
     }
 ?>
