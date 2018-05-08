@@ -10,7 +10,7 @@
     $territorio = buscaTerritorio($conexao, $IDTerritorio);
     removeTerritorio($conexao, $IDTerritorio);
 
-    header("Location: territorio-lista.php?removido=true&territorio={$territorio[DescricaoTerritorio]}");
+    header("Location: territorio-lista.php?removido=true&territorio={$IDTerritorio[IDTerritorio]}");
     die();
 
     ?>

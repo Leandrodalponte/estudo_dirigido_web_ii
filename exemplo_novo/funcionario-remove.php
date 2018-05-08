@@ -10,7 +10,7 @@
     $funcionario = buscaFuncionario($conexao, $IDFuncionario);
     removeFuncionario($conexao, $IDFuncionario);
 
-    header("Location: funcionario-lista.php?removido=true&funcionario={$funcionario[Nome]}");
+    header("Location: funcionario-lista.php?removido=true&funcionario={$IDFuncionario[IDFuncionario]}");
     die();
 
     ?>
