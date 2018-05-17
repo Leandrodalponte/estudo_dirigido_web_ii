@@ -25,11 +25,14 @@
     }
 
     function removeFuncionario($conn, $IDFuncionario) {
-        $query = "delete from ordens_detalhes where ordens_detalhes.IDOrdem in (select IDOrdem from ordens where IDFuncionario = {$IDFuncionario};)
-                  delete from ordens where IDFuncionario = {$IDFuncionario};
-                  delete from funcionarios_territorios where IDFuncionario = {$IDFuncionario};
-                  delete from funcionarios WHERE IDFuncionario = {$IDFuncionario};";
-        return mysqli_query($conn, $query); return $query;
+        $query = "delete from ordens_detalhes where ordens_detalhes.IDOrdem in (select IDOrdem from ordens where IDFuncionario = {$IDFuncionario})";
+        mysqli_query($conn, $query);
+        $query = "delete from ordens where IDFuncionario = {$IDFuncionario}";
+        mysqli_query($conn, $query);
+        $query = "delete from funcionarios_territorios where IDFuncionario = {$IDFuncionario}";
+        mysqli_query($conn, $query);
+        $query = "delete from funcionarios WHERE IDFuncionario = {$IDFuncionario}";
+        return mysqli_query($conn, $query);
     }
 
     function buscaFuncionario($conn, $IDFuncionario) {
