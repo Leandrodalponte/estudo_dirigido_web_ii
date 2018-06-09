@@ -8,7 +8,7 @@
     <p class="alert-success">Territorio <?=$_GET['IDTerritorio']?> foi removido com sucesso!</p>
 <?php } ?>
 
-<table class="table table-striped table-bordered">
+<table class="centered bordered ">
     <tr>
         <td>ID Territorio</td>
         <td>ID Funcionario</td>
@@ -23,11 +23,11 @@
             <td><?=$funterritorio['IDFuncionario']?></td>
             <td>
             
-                <a class="btn btn-primary" href="func_territorio-altera-formulario.php?id=<?=$funterritorio['IDTerritorio']?>">Alterar</a>
+                <a class="btn waves-effect" href="func_territorio-altera-formulario.php?id=<?=$funterritorio['IDTerritorio']?>"> Alterar</a>
 
                 <form action="func_territorio-remove.php" method="post">
                     <input type="hidden" name="IDTerritorio" value="<?=$funterritorio['IDTerritorio']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn waves-effect">Remover</button>
                 </form>
             </td>
         </tr>
