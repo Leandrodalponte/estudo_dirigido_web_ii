@@ -15,8 +15,9 @@
     <input type="hidden" name="IDTerritorio" value="<?=$IDTerritoriofun?>" />
     <table>
         <tr>
-            <td>ID Funcionario</td>
-            <td><input type="text" class="form-control" name="IDFuncionario" /></td>
+
+            <td><input type="number" class="input-field col s6" 
+            placeholder="ID Funcionario" name="IDFuncionario" /></td>
         </tr>
 
         <tr>

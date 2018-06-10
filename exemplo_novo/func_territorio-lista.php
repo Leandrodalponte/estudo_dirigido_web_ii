@@ -23,11 +23,12 @@
             <td><?=$funterritorio['IDFuncionario']?></td>
             <td>
             
-                <a class="btn waves-effect" href="func_territorio-altera-formulario.php?id=<?=$funterritorio['IDTerritorio']?>"> Alterar</a>
+                <a class="btn-floating" href="func_territorio-altera-formulario.php?id=<?=$funterritorio['IDTerritorio']?>"> 
+                <i class="material-icons">edit</i></a>
 
                 <form action="func_territorio-remove.php" method="post">
                     <input type="hidden" name="IDTerritorio" value="<?=$funterritorio['IDTerritorio']?>" />
-                    <button class="btn waves-effect">Remover</button>
+                    <button class="btn-floating waves-effect"><i class="material-icons">delete</i></button>
                 </form>
             </td>
         </tr>

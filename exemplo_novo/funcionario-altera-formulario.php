@@ -61,7 +61,7 @@ $funcionario = buscaFuncionario($conexao, $IDFuncionario);
             </tr>
             <tr>
                 <td>Cep</td>
-                <td><input type="number_format" value="<?= $row['Cep'] ?>" class="form-control" name="Cep" /></td>
+                <td><input type="number" value="<?= $row['Cep'] ?>" class="form-control" name="Cep" /></td>
             </tr>
             <tr>
                 <td>Pais</td>

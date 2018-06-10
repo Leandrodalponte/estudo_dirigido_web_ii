@@ -25,11 +25,11 @@
             <td><?=$territorio['IDRegiao']?></td>
             <td>
             
-                <a class="btn btn-primary" href="territorio-altera-formulario.php?id=<?=$territorio['IDTerritorio']?>">Alterar</a>
+                <a class="btn-floating" href="territorio-altera-formulario.php?id=<?=$territorio['IDTerritorio']?>"><i class="material-icons">edit</i></a>
 
                 <form action="territorio-remove.php" method="post">
                     <input type="hidden" name="IDTerritorio" value="<?=$territorio['IDTerritorio']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn-floating waves-effect"><i class="material-icons">delete</i></button>
                 </form>
             </td>
         </tr>

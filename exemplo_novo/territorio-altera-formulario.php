@@ -18,13 +18,15 @@
         while ($row = mysqli_fetch_assoc($territorio)) {
             ?>
         <tr>
-            <td>Territorio</td>
-            <td><input type="text" class="form-control" value="<?= $row['DescricaoTerritorio'] ?>"  name="DescricaoTerritorio" /></td>
+           
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="Território" value="<?= $row['DescricaoTerritorio'] ?>"  name="DescricaoTerritorio" /></td>
         </tr>
 
         <tr>
-            <td>ID Região</td>
-            <td><input type="text" class="form-control"  value="<?= $row['IDRegiao'] ?>" name="IDRegiao" /></td>
+
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="ID Região"  value="<?= $row['IDRegiao'] ?>" name="IDRegiao" /></td>
         </tr>
 
         <tr>

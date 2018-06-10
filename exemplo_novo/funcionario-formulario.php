@@ -7,67 +7,69 @@
    // $categorias = listaCategorias($conexao);
 ?>
 
-<h1>Formulário de Cadastro</h1>
+<div class="card-panel blue z-depth-4 center"> <h4>Cadastro de funcionarios</h4></div>
 
 <form action="funcionario-adiciona.php" method="post">
     <table>
-        <tr>
-            <td>Nome</td>
-            <td><input type="text" class="form-control" name="Nome" /></td>
+        <tr>          
+            <td><input type="text" 
+            class="input-field col s6" 
+            placeholder="Seu nome" 
+            name="Nome" /></td>
         </tr>
 
         <tr>
-            <td>SobreNome</td>
-            <td><input type="text" class="form-control" name="Sobrenome" /></td>
+            <td><input type="text"
+             class="input-field col s6" 
+            placeholder="Sobrenome"
+             name="Sobrenome" /></td>
         </tr>
 
         <tr>
-            <td>Titulo</td>
-            <td><textarea type="form-control" class="form-control" name="Titulo" ></textarea></td>
+            <td><input type="text" class="input-field col s6" 
+            placeholder="Titulo" name="Titulo" /></td>
         </tr>
 
         <tr>
-            <td>Titulo Cortesia</td>
-            <td><textarea type="form-control" class="form-control" name="TituloCortesia"></textarea></td>
+            <td><input type="text" class="input-field col s6" 
+            placeholder="Titulo Cortesia" name="TituloCortesia"/></td>
         </tr>
 
         <tr>
-            <td>Data Nascimento</td>
-            <td><input type="date"  name="DataNac" ></td>
+            <td>  <input type="text" placeholder="Data Nascimento" name="DataNac" class="datepicker">  </td>
         </tr>
          
         <tr>
-            <td>Data Admimissão</td>
-            <td><input type="date"  name="DataAdmissao" ></td>
+            <td><input type="text" placeholder="Data Admissão" class="datepicker"  name="DataAdmissao" ></td>
         </tr>
 
         <tr>
-            <td>Endereço</td>
-            <td><input type="text" class="form-control" name="Endereco" /></td>
+            <td><input type="text" class="input-field col s6" 
+            placeholder="Endereço" name="Endereco" /></td>
         </tr>
         <tr>
-            <td>Cidade</td>
-            <td><input type="text" class="form-control" name="Cidade" /></td>
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="Cidade" name="Cidade" /></td>
         </tr>
         <tr>
-            <td>Região</td>
-            <td><input type="text" class="form-control" name="Regiao" /></td>
+            <td><input type="text" class="input-field col s6" 
+            placeholder="Região" name="Regiao" /></td>
         </tr>
         <tr>
-            <td>Cep</td>
-            <td><input type="number_format" class="form-control" name="Cep" /></td>
+            <td><input type="number"  class="input-field col s6" 
+            placeholder="Cep" name="Cep" /></td>
         </tr>
         <tr>
-            <td>Pais</td>
-            <td><input type="text" class="form-control" name="Pais" /></td>
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="Pais" name="Pais" /></td>
         </tr>
         <tr>
-            <td>Telefone</td>
-            <td><input type="text" class="form-control" name="TelefoneResidencial" /></td>
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="Telefone" name="TelefoneResidencial" /></td>
         </tr>
         <tr>
-            <td>Extesão</td>
-            <td><input type="text" class="form-control" name="Extensao" /></td>
+            <td><input type="text"  class="input-field col s6" 
+            placeholder="Extensão" name="Extensao" /></td>
         </tr>
        
 
@@ -77,4 +79,19 @@
             </td>
         </tr>
     </table>
+    <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+  </script>
+  
+
 </form>

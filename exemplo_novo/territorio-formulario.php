@@ -7,23 +7,26 @@
    // $categorias = listaCategorias($conexao);
 ?>
 
-<h1>Formulário de Cadastro</h1>
+<div class="card-panel blue z-depth-4 center"> <h4>Cadastro de Territorio</h4></div>
 
 <form action="territorio-adiciona.php" method="post">
     <table>
         <tr>
-            <td>ID Territorio</td>
-            <td><input type="text" class="form-control" name="IDTerritorio" /></td>
+            
+            <td><input type="number"  class="input-field col s6" 
+            placeholder="ID Território"  name="IDTerritorio" /></td>
         </tr>
 
         <tr>
-            <td>Territorio</td>
-            <td><input type="text" class="form-control" name="DescricaoTerritorio" /></td>
+            
+            <td><input type="text" class="input-field col s6" 
+            placeholder="Território" name="DescricaoTerritorio" /></td>
         </tr>
 
         <tr>
-            <td>ID Região</td>
-            <td><input type="text" class="form-control" name="IDRegiao" /></td>
+           
+            <td><input type="number" class="input-field col s6" 
+            placeholder="ID Região" name="IDRegiao" /></td>
         </tr>
        
 

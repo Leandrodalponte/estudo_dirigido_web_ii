@@ -8,7 +8,7 @@
     <p class="alert-success">Funcionario <?=$_GET['funcionario']?> foi removido com sucesso!</p>
 <?php } ?>
 
-<table class="table table-striped table-bordered">
+<table class="centered bordered">
     <tr>
         <td>Nome</td>
         <td>Sobrenome</td>
@@ -45,11 +45,11 @@
             <td><?=$funcionario['Extensao']?></td>
             <td>
             
-                <a class="btn btn-primary" href="funcionario-altera-formulario.php?id=<?=$funcionario['IDFuncionario']?>">Alterar</a>
+                <a class="btn-floating"  href="funcionario-altera-formulario.php?id=<?=$funcionario['IDFuncionario']?>"><i class="material-icons">edit</i></a>
 
                 <form action="funcionario-remove.php" method="post">
                     <input type="hidden" name="IDFuncionario" value="<?=$funcionario['IDFuncionario']?>" />
-                    <button class="btn btn-danger">Remover</button>
+                    <button class="btn-floating waves-effect"><i class="material-icons">delete</i></button>
                 </form>
             </td>
         </tr>
