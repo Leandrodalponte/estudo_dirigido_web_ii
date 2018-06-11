@@ -1,8 +1,14 @@
-          
-            
-            </div>
-        </div>
-        <footer class="page-footer red darken-3">
+</div>
+</div>
+<style>
+.footer {
+ position: flex;   /* posição  */
+ bottom: 0;   /* Fixa a div no fim da página */
+ width: 100%;   /* Largura estende por toda página da div */
+ }
+ </style>
+<body>
+<footer class="page-footer red darken-3 footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -26,6 +32,7 @@
             <a class="grey-text text-lighten-4 right" href="#!">mais Links</a>
             </div>
           </div>
-        </footer>  
-    </body>
+        </footer> 
+
+</body>
 </html>
